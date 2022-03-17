@@ -147,9 +147,10 @@
       else
         return 0
     }
-
-    function reload() {
-      location.reload()
+    function newGame(){
+            clickCount =0
+            let birdLocation = Math.random(0,24)
+            document.getElementById("tries").innerHTML="Number of clicks is "+clickCount
     }
 
   </script>
