@@ -70,7 +70,22 @@
 		}
 	}
 
+	function retUnique(){
+	var queueItems = document.getElementsByClassName("queue")
+	var lent=queueItems.length
+    for(let i=0;i<lent;i++){
+		for(let j=i+1;j<lent;j++){
+			
+			if(queueItems[i].innerHTML==queueItems[j].innerHTML){
+			
+				queueItems[j].remove()
+				lent--;
+				j--;
+			}
 
+		}
+	}
+}
 </script>
 
 </html>
